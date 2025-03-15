@@ -1,0 +1,19 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+Builds/
+# User-specific files
+UserSettings/
+# Windows image file thumbs.db
+Thumbs.db
+# VS Code settings
+.vscode/
+# Rider settings
+.idea/
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp

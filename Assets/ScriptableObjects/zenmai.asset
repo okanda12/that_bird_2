@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc45400e7ea613e4a934d800b641af7b, type: 3}
+  m_Name: zenmai
+  m_EditorClassIdentifier: 
+  itemName: zenmai
+  itemName_JP: "\u30BC\u30F3\u30DE\u30A4"
+  itemIntro: "\u30B0\u30EB\u30EB\u306B\u6295\u3052\u308B\u3068+1"
+  itemSprite: {fileID: -7235347426711882063, guid: 6002d8df75c564641a61e10457a601cc, type: 3}
+  hasRigidbody: 1
+  itemSprite_Highlight: {fileID: 2451794673963082574, guid: 6002d8df75c564641a61e10457a601cc, type: 3}
+  itemSprite_Kage: {fileID: 7748397084334793503, guid: 6002d8df75c564641a61e10457a601cc, type: 3}
+  itemColor: {r: 0.61359596, g: 0.83396226, b: 0.31942323, a: 1}
