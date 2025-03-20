@@ -15,8 +15,8 @@ MonoBehaviour:
   itemName: kinoko_rare
   itemName_JP: "\u30A2\u30AB\u30AD\u30CE\u30B3"
   itemIntro: "\u30B0\u30EB\u30EB\u306B\u6295\u3052\u308B\u3068+1"
-  itemSprite: {fileID: 3504536579291100474, guid: 6002d8df75c564641a61e10457a601cc, type: 3}
+  itemSprite: {fileID: 1427526247601300393, guid: 6002d8df75c564641a61e10457a601cc, type: 3}
   hasRigidbody: 1
-  itemSprite_Highlight: {fileID: -1597146874268239257, guid: 6002d8df75c564641a61e10457a601cc, type: 3}
+  itemSprite_Highlight: {fileID: 13294638665893053, guid: 6002d8df75c564641a61e10457a601cc, type: 3}
   itemSprite_Kage: {fileID: 6583423457640167156, guid: 6002d8df75c564641a61e10457a601cc, type: 3}
   itemColor: {r: 0.8867924, g: 0.1991099, b: 0.1991099, a: 1}

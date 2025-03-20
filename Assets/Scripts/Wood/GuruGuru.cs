@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using System.Linq;
+
 
 
 public class GuruGuru : MonoBehaviour
@@ -22,6 +24,9 @@ public class GuruGuru : MonoBehaviour
     [SerializeField] SpriteRenderer hane_highlight;//アイテムを入れると光る
     [SerializeField] Sprite frame_Sprite_highlight;//ハイライト時
     [SerializeField] Sprite frame_Sprite_norm;//通常時
+    [SerializeField] Wood1 wood1;//オーブを発光させるwood1オブジェクト
+    [SerializeField] Score score;//スコアを表示させるオブジェクト
+
 
     private Item_Drag draggedItem;//ドラッグされたアイテムから取得します
     private Item_Drag currentItem;//現在触れているアイテム
@@ -110,6 +115,7 @@ public class GuruGuru : MonoBehaviour
     /// <summary>
     /// アイテムを使用 Item_Drag側から呼び出します
     /// </summary>
+    /// 
     public void UseItem()
     {
         if (currentItem != null) {
@@ -135,19 +141,60 @@ public class GuruGuru : MonoBehaviour
                 Debug.Log(item_dic);
 
 
-                //もしアイテムがあるなら
+                //もしアイテムがあるなら使用する
                 if (item_dic[0] > 0)
                 {
-                    item_dic[0] -= 1;//使用する
+                    item_dic[0] -= 1;//カウントを一つ減らす
+                    GameManager.instance.throwCount += 1;
+                    int throwCount = GameManager.instance.throwCount;
 
 
 
-                    GameManager.instance.PlayDonkiraSE();//カポッ
-                                                      //スコア加算
-                    Add_Rotate_Score(item_dic);
+                    GameManager.instance.PlayDonkiraSE();//カポッ                          
+                    Add_Rotate_Score(item_dic);//スコア加算
+
+                    wood1.Lighten(throwCount);
+                  
+
+                    if (throwCount >= 4)//4回投げると初期化
+                    {
+
+                        wood1.AllDelight();//光を消す
+
+
+
+                        //辞書から0となっているイベントを持ってくる
+                        var NextEvent = GameManager.instance.Eventdic.FirstOrDefault(e => e.Value[1] == 0);
+                        int score_now = GameManager.instance.rotate_score;//現在のスコア
+                        int score_next = NextEvent.Value[0];//次のスコア
+
+                        //もし達成したら
+                        if (score_now >= score_next)
+                        {
+
+                            //Debug.Log($"you complete {NextEvent.Value[0]}");
+
+                            GameManager.instance.Eventdic[NextEvent.Key][1] = 1;//達成済みとする
+                            StartCoroutine(score.EventStart(NextEvent.Key));
+
+                        }
+                        GameManager.instance.throwCount =0;
+                        GameManager.instance.rotate_score = 0;
+                    }
+                    
+
+
+
+
+
+
+
 
 
                     currentItem = null; // 使用後にリセット
+
+
+
 
 
                 }
@@ -158,8 +205,6 @@ public class GuruGuru : MonoBehaviour
             }
 
         }
-
-
 
     }
 

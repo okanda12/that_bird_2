@@ -33,6 +33,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] public AudioClip Kapo;//カポ　　https://soundeffect-lab.info/sound/various/various2.html
     [SerializeField] public AudioClip Donkira;//ドンキら-ん　アイテム使用音　https://soundeffect-lab.info/sound/various/various2.html
     [SerializeField] public AudioClip Pororon;//ぽろろん　アイテム使用音　https://soundeffect-lab.info/sound/various/various2.html
+    [SerializeField] public AudioClip Pyuroriro;//ぴゅろりろリーン　　https://soundeffect-lab.info/sound/various/various2.html
+    [SerializeField] public AudioClip Punch;//パンチ小　　https://soundeffect-lab.info/sound/various/various2.html
 
     private void Awake()
     {

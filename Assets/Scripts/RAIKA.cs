@@ -94,16 +94,18 @@ public class RAIKA : MonoBehaviour
         targetPos.z = 0f;
 
         float elapsedTime = 0f;
-
+        float threshold = 0.1f; // 近づいたとみなす距離
         //走る
-        while (elapsedTime < gosogoso_speed)
+        while (Vector3.Distance(transform.position, targetPos) > threshold)
         {
-
-
-            transform.position = Vector3.Lerp(startPos, targetPos, elapsedTime / gosogoso_speed);
             elapsedTime += Time.deltaTime;
+            // 速度を考慮して補間率を計算
+            float t = Mathf.Clamp01(elapsedTime * foot_speed / Vector3.Distance(startPos, targetPos));
 
-            
+            // Lerpでスムーズに移動
+            transform.position = Vector3.Lerp(startPos, targetPos, t);
+
+
             if (item ==null)
             {
                 Debug.Log("Rika's item banished!");
