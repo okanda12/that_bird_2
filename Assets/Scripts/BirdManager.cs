@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BirdManager : MonoBehaviour
 {
-    
+    //一定間隔で抽選が行われ,鳥が羽根を落とします．
+
+
     [SerializeField] Transform bird;//子オブジェクトの鳥
     [SerializeField] GameObject item_inField;//itemの元となるprefab
     [SerializeField] ItemData wingData;//羽根のScriptableObject
@@ -34,7 +36,7 @@ public class BirdManager : MonoBehaviour
     /// </summary>
     public IEnumerator Bird_Pre()
     {
-        while (true)
+        while (true )
         {
             //鳥の抽選間隔
             float bird_interval = GameManager.instance.bird_interval;

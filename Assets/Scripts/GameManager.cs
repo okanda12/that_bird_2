@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     public Dictionary<string, List<int>> Eventdic = new Dictionary<string, List<int>>()
     {
         // "Eventの名前"　<イベントを発動させるためのスコア>　　<既に発動したかどうか>　という組み合わせ
-        {"Event1" , new List<int>{ 5, 0 } }, //鳥が来るようになったぞ！
+        {"Event1" , new List<int>{ 4, 0 } }, //鳥が来るようになったぞ！
         {"Event2" , new List<int>{ 30, 0 } },　//キノコが発生するようになったぞ！
         {"Event3" , new List<int>{ 100, 0 } },　//鬱鳥出現
         {"Event4" , new List<int>{ 1000, 0 } },　//ゼンマイが生えるようになったぞ！
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
     };
 
 
-    public int rotate_score = 0;//全体的な回転スコア
+    public int rotate_score = 0;//回転スコア.アイテムを4回使用するとリセット
 
     public float wind_interval = 25f;//この間隔で風の抽選を行う
     public float wind_luck = 0.5f;//この確率で風がふく
@@ -72,22 +72,12 @@ public class GameManager : MonoBehaviour
     public float bird_luck = 0.3f;//この確率で鳥が現れる
     public float mimizu_luck = 0.1f;//この確率でミミズが出る
 
+    public float kinoko_interval = 10f;//この間隔でキノコの抽選を行う
+    public float kinoko_luck = 0.9f;//この確率でキノコが現れる
+    public float rarekinoko_luck = 0.1f;//この確率でレアキノコが出る
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public int throwCount = 0;//アイテムをぐるぐるに投げた回数.4回使用するとリセット
 
 
 
@@ -238,6 +228,15 @@ public class GameManager : MonoBehaviour
     {
         SoundManager.instance.PlaySE(SoundManager.instance.Pororon);
     }
+    public void PlayPyurorioSE()
+    {
+        SoundManager.instance.PlaySE(SoundManager.instance.Pyuroriro);
+    }
+    public void PlayPunchSE()
+    {
+        SoundManager.instance.PlaySE(SoundManager.instance.Punch);
+    }
+
 
 
 

@@ -9,7 +9,7 @@ public class WindManager : MonoBehaviour
     //風は右から左に流れ,それにともなって草木が揺れ,
     //自動的に草をクリックしてくれます
 
-    [SerializeField] float moveSpeed = 1f; // 風の移動速度
+    
     [SerializeField] List<Transform> kusakis;  // 草木オブジェクトのリスト
 
     [SerializeField] float haji_right_x = 11f;//画面右端のTransformのy座標です

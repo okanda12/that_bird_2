@@ -51,9 +51,38 @@ public class Wood : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// ちょっと長めにブルブルします
+    /// </summary>
+    /// <returns></returns>
+    public IEnumerator LongBulu()
+    {
+        float elapsedTime = 0f;
+        float LongBulu_time = 2f;
+        float Long_Bulu_magnitiude = 0.1f;
+
+        while (elapsedTime < LongBulu_time)
+        {
+            elapsedTime += Time.deltaTime;
+
+            float offsetX = Random.Range(-1f, 1f) * Long_Bulu_magnitiude;
+            float offsetY = Random.Range(-1f, 1f) * Long_Bulu_magnitiude;
+
+            //オブジェクトの位置を更新
+            transform.localPosition = originalPos + new Vector3(offsetX, offsetY, 0f);
 
 
-    
+            yield return null;
+        }
+
+        //震え終わったら元の位置に戻す
+        transform.localPosition = originalPos;
+
+    }
+
+
+
+
     // Update is called once per frame
     void Update()
     {

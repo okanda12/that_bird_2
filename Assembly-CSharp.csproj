@@ -63,14 +63,17 @@
     <Compile Include="Assets\Scripts\BirdManager.cs" />
     <Compile Include="Assets\Scripts\RAIKA.cs" />
     <Compile Include="Assets\Scripts\Kusa.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObject\EventData.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\Internal\SAColliderBuilderCommon.cs" />
+    <Compile Include="Assets\Scripts\Wood\GuruGuru.cs" />
     <Compile Include="Assets\Scripts\NEWS.cs" />
     <Compile Include="Assets\Scripts\AnimationManager.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObject\ItemData.cs" />
     <Compile Include="Assets\Scripts\Wood.cs" />
     <Compile Include="Assets\Scripts\Item_Drag.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\SAMeshCollider.cs" />
-    <Compile Include="Assets\Scripts\ItemData.cs" />
     <Compile Include="Assets\Scripts\SoundSlider.cs" />
+    <Compile Include="Assets\Scripts\Wood\Wood1.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\SABoneCollider.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
@@ -79,14 +82,16 @@
     <Compile Include="Assets\Scripts\Spark_Text.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\SABoneColliderBuilder.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\SABoneColliderChild.cs" />
-    <Compile Include="Assets\Scripts\GuruGuru.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\First_Get.cs" />
     <Compile Include="Assets\Scripts\WindManager.cs" />
     <Compile Include="Assets\Scripts\FadePrefab.cs" />
+    <Compile Include="Assets\Scripts\KinokoManager.cs" />
     <Compile Include="Assets\Scripts\ItemSlot.cs" />
     <Compile Include="Assets\Scripts\Item_inFIeld.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\Internal\SAMeshColliderCommon.cs" />
+    <Compile Include="Assets\Scripts\Effect\MoyaMoya.cs" />
+    <Compile Include="Assets\Scripts\Wood\FourOrb.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

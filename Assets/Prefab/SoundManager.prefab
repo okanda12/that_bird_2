@@ -59,6 +59,8 @@ MonoBehaviour:
   Kapo: {fileID: 8300000, guid: 6b469fdfebf61474a8abf6e276a84bee, type: 3}
   Donkira: {fileID: 8300000, guid: 1a029d2ee5116914f91e649c29567ec5, type: 3}
   Pororon: {fileID: 8300000, guid: 8b5474a4e32059544927d5e5ac9edbb4, type: 3}
+  Pyuroriro: {fileID: 8300000, guid: 740325b84ef737f4497f6644ae3879d6, type: 3}
+  Punch: {fileID: 8300000, guid: c312618c6bfcacd499e8a6d44f6d6172, type: 3}
 --- !u!1 &7063870574003286483
 GameObject:
   m_ObjectHideFlags: 0
