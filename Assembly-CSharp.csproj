@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\NEWS.cs" />
     <Compile Include="Assets\Scripts\AnimationManager.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\ItemData.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObject\DialogueData.cs" />
     <Compile Include="Assets\Scripts\Wood.cs" />
     <Compile Include="Assets\Scripts\Item_Drag.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\SAMeshCollider.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\SAColliderBuilder\Scripts\SABoneCollider.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueManage.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\SAMeshColliderBuilder.cs" />
     <Compile Include="Assets\SAColliderBuilder\Scripts\Internal\SABoneColliderCommon.cs" />
     <Compile Include="Assets\Scripts\Spark_Text.cs" />
