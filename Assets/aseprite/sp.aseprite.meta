@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fd47fea8a8042254a9aae219abb439f3
+guid: fead12ed705596f4f9352e8e72b4a967
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -76,7 +76,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -89,7 +89,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638780162425103283
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,58 +122,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: tori
+  - name: sp
     originalName: 
-    pivot: {x: 0.5909091, y: 0.6282051}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 91
-      y: 4
-      width: 77
-      height: 78
-    spriteID: 8d3ee4f6411702c40b844f2d5b0242d0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 91, y: 4}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.5909091, y: 0.6282051}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 90
-      width: 77
-      height: 78
-    spriteID: e77a4523e9e8f8d4eb2d2a32fa1a216f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 90}
-  - name: Frame_2
-    originalName: 
-    pivot: {x: 0.6012658, y: 0.6282051}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 79
-      height: 78
-    spriteID: 449f87a941125c645bfa0637cb03b09f
+      width: 139
+      height: 75
+    spriteID: 64693e999132b3440b44ea9e97db7c2b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -185,39 +145,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -198892910
-    name: tori
+    guid: 1543969247
+    name: sp
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: sp
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 66
-        y: 44
-        width: 77
-        height: 78
-      spriteId: 8d3ee4f6411702c40b844f2d5b0242d0
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 66
-        y: 44
-        width: 77
-        height: 78
-      spriteId: e77a4523e9e8f8d4eb2d2a32fa1a216f
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 64
-        y: 44
-        width: 79
-        height: 78
-      spriteId: 449f87a941125c645bfa0637cb03b09f
+        x: 0
+        y: 0
+        width: 139
+        height: 75
+      spriteId: 64693e999132b3440b44ea9e97db7c2b
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -233,44 +175,8 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 223, y: 186}
-  previousTextureSize: {x: 256, y: 256}
+  canvasSize: {x: 139, y: 75}
+  previousTextureSize: {x: 256, y: 128}
